@@ -21,3 +21,6 @@ desktop.ini
 .env.*
 *.log
 *.tmp
+
+# 開發過程紀錄（僅本機保留）
+tasks/
