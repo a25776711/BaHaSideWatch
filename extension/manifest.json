@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "BaHaSideWatch",
+  "version": "0.2.0",
+  "description": "巴哈姆特動畫瘋：像 YouTube 直播全螢幕一樣，左側影片、右側彈幕列表的側欄全螢幕模式（Shift+F）。",
+  "permissions": ["storage"],
+  "action": {
+    "default_title": "BaHaSideWatch 設定",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://ani.gamer.com.tw/animeVideo.php*"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}

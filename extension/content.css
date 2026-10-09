@@ -1,0 +1,165 @@
+html.bsw-active {
+  --bsw-panel-w: clamp(320px, 22vw, 420px);
+}
+
+html.bsw-active,
+html.bsw-active body {
+  overflow: hidden !important;
+  background: #000 !important;
+}
+
+html.bsw-active .top_sky,
+html.bsw-active .topsky_hoverarea,
+html.bsw-active nav.mainmenu,
+html.bsw-active .footer,
+html.bsw-active #BH_background {
+  visibility: hidden !important;
+}
+
+html.bsw-active #BH_background section.player {
+  visibility: visible !important;
+  position: fixed !important;
+  inset: 0 !important;
+  z-index: 2000 !important;
+  display: flex !important;
+  flex-direction: row !important;
+  width: auto !important;
+  height: auto !important;
+  max-width: none !important;
+  min-width: 0 !important;
+  max-height: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  background: #000 !important;
+  overflow: hidden !important;
+  transform: none !important;
+}
+
+html.bsw-active section.player > .videoframe {
+  position: relative !important;
+  flex: 1 1 0 !important;
+  float: none !important;
+  width: auto !important;
+  min-width: 0 !important;
+  height: 100% !important;
+  max-width: none !important;
+  max-height: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  background: #000 !important;
+}
+
+html.bsw-active section.player > .videoframe > .video {
+  position: relative !important;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: none !important;
+  max-height: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  background: #000 !important;
+}
+
+html.bsw-active .videoframe #video-container,
+html.bsw-active .videoframe #ani_video {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: none !important;
+  max-height: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+html.bsw-active .videoframe #ani_video video.vjs-tech,
+html.bsw-active .videoframe #ani_video_html5_api {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+}
+
+html.bsw-active section.player > .subtitle {
+  position: relative !important;
+  top: auto !important;
+  right: auto !important;
+  bottom: auto !important;
+  left: auto !important;
+  flex: 0 0 var(--bsw-panel-w) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  width: var(--bsw-panel-w) !important;
+  min-width: 0 !important;
+  height: 100% !important;
+  max-height: none !important;
+  margin: 0 !important;
+  overflow: hidden !important;
+  box-sizing: border-box !important;
+}
+
+html.bsw-active section.player > .subtitle > .sub_top {
+  flex: 0 0 auto !important;
+}
+
+html.bsw-active section.player > .subtitle > .ani-tab-content {
+  flex: 1 1 auto !important;
+  position: relative !important;
+  min-height: 0 !important;
+  height: auto !important;
+  max-height: none !important;
+  overflow: hidden !important;
+}
+
+html.bsw-active section.player > .subtitle .ani-tab-content > .ani-tab-content__item {
+  height: 100% !important;
+  max-height: none !important;
+  overflow-y: auto !important;
+}
+
+html.bsw-active section.player > .subtitle .danmu-scroll {
+  overflow-y: auto !important;
+}
+
+html.bsw-active.bsw-nopanel section.player > .subtitle {
+  display: none !important;
+}
+
+html.bsw-active .bsw-toast:not(#bsw-never-a):not(#bsw-never-b) {
+  display: block !important;
+}
+
+html.bsw-active .bsw-toast {
+  position: fixed;
+  left: 50%;
+  bottom: 72px;
+  transform: translateX(-50%);
+  z-index: 2147483000;
+  max-width: 80vw;
+  padding: 10px 18px;
+  border-radius: 6px;
+  background: rgba(20, 20, 20, 0.88);
+  color: #fff;
+  font: 14px/1.4 "Microsoft JhengHei", "PingFang TC", sans-serif;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+html.bsw-active .bsw-toast.bsw-toast-show {
+  opacity: 1;
+}
+
+.bsw-btn.vjs-control {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.bsw-btn svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+  pointer-events: none;
+}
+.bsw-btn.bsw-btn-on {
+  color: #00b4d8 !important;
+}
