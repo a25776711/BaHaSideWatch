@@ -1,0 +1,23 @@
+# 打包產物（上架 / Release 用的 zip、crx、私鑰）
+*.zip
+*.crx
+*.pem
+
+# Node / 測試工具
+node_modules/
+playwright-report/
+test-results/
+
+# 編輯器與系統檔
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 環境變數與暫存
+.env
+.env.*
+*.log
+*.tmp

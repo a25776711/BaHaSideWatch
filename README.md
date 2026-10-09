@@ -68,3 +68,7 @@
 - 若動畫瘋改版調整全螢幕樣式，全螢幕時右側面板可能會消失（瀏覽器拒絕全螢幕時的網頁全螢幕版面不受影響）。
 
 更多技術細節見 [extension/README.md](extension/README.md)。
+
+## 授權
+
+本專案以 [MIT License](LICENSE) 授權。
