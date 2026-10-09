@@ -61,6 +61,7 @@
 - `manifest.json`：MV3 設定，只在動畫瘋觀看頁注入；權限 `storage`；工具列 popup。
 - `content.js`：按鈕、快捷鍵、進出模式邏輯、讀取並監聽設定（`DEFAULTS` 新增欄位即可擴充設定）。
 - `popup.html` / `popup.js`：設定開關介面（支援深色模式）。
+- `icons/`：工具列與擴充功能頁圖示（16/32 無底塊、48/128 深色底塊）。
 - `content.css`：所有版面樣式，皆掛在 `html.bsw-active` 下（class 前綴 `bsw-`）；
   擴充功能不搬動任何 DOM，離開時移除 class 即完全還原。
 
